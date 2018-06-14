@@ -1,0 +1,10 @@
+# The last value is ~100 people
+numerical_list[len(numerical_list)-1]
+thousand_or_greater = []
+for line in numerical_list:
+    name = line[0]
+    number = line[1]
+    if number >= 1000:
+        thousand_or_greater.append(name)
+        
+print(thousand_or_greater[0:10])
